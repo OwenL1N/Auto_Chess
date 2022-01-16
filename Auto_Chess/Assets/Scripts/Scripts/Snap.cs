@@ -18,9 +18,9 @@ public class Snap : MonoBehaviour
     private void SnapToGrid()
     {
         var position = new Vector3(
-            (Mathf.RoundToInt(this.transform.position.x / 100) * 50) + 50,
+            (Mathf.RoundToInt(this.transform.position.x / 100) * 100) + 50,
             25,
-            (Mathf.RoundToInt(this.transform.position.z / 100) * 50) + 50);
+            (Mathf.RoundToInt(this.transform.position.z / 100) * 100) + 50);
 
         this.transform.position = position;
     }
