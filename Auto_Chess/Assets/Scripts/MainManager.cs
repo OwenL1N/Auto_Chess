@@ -18,7 +18,9 @@ public class MainManager : Manager<MainManager> {
 
     public void InstantiateUnits() {
         EntitiesDatabaseSO.EntityData entityData = entitiesDatabase.allEntities[0];
-        BaseEntity newEntity = Instantiate(entityData.prefab);
+        BaseEntity newEntity = Instantiate(entityData.prefab, team1Parent);
+        playersTeamPosition.Add(newEntity,new Pos(1,1));
+        print("click");
     }
 }
 
