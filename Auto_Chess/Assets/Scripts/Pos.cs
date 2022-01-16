@@ -7,9 +7,9 @@ public class Pos : MonoBehaviour
     private int x;
     private int z;
 
-    public Pos(int x, int z) {
-        this->x = x;
-        this->z = z;
+    public Pos(int newX, int newZ) {
+        x = newX;
+        z = newZ;
     }
 
     public int getX(){
@@ -17,6 +17,6 @@ public class Pos : MonoBehaviour
     }
 
     public int getZ() {
-        return Z;
+        return z;
     }
 }

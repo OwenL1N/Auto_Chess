@@ -13,12 +13,12 @@ public class MainGame : MonoBehaviour
     void Start() {
 
         // Create the 2 teams.
-        InstantiateUnits();
+        // InstantiateUnits();
     }
 
-    private void InstantiateUnits(EntitiesDatabaseSO.EntityData entityData) {
-        BaseEntity newEntity = Instantiate(entityData.prefab, team1Parent);
+    // private void InstantiateUnits(EntitiesDatabaseSO.EntityData entityData) {
+    //     BaseEntity newEntity = Instantiate(entityData.prefab, team1Parent);
         
-    }
+    // }
     
 }
