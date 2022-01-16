@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class Moving : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    private Vector3 mOffset;
+
+    private float mZCoord;
+
+    void OnMouseDown()
     {
-        
+        mZCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
+
+        mOffset = gameObject.transform.position - GetMouseWorldPos();
     }
 
-    // Update is called once per frame
-    void Update()
+    private Vector3 GetMouseWorldPos()
     {
-        
+        Vector3 mousepoint = Input.mousePosition;
+
+        mousepoint.z = mZCoord;
+
+        return Camera.main.ScreenToWorldPoint(mousepoint);
+    }
+    void OnMouseDrag()
+    {
+        transform.position = GetMouseWorldPos() + mOffset;
     }
 }
