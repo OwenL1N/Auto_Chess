@@ -2,23 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainGame : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-
-    public Transform team1Parent;
-    public Transform team2Parent;
-    private Dictionary<BaseEntity,Pos> playersTeamPosition = new Dictionary<BaseEntity,Pos>();
-    private Dictionary<BaseEntity,Pos> opponentsTeamPosition = new Dictionary<BaseEntity,Pos>();
-
-    void Start() {
-
-        // Create the 2 teams.
-        // InstantiateUnits();
+    // Start is called before the first frame update
+    void Start()
+    {
+        
     }
 
-    // private void InstantiateUnits(EntitiesDatabaseSO.EntityData entityData) {
-    //     BaseEntity newEntity = Instantiate(entityData.prefab, team1Parent);
+    // Update is called once per frame
+    void Update()
+    {
         
-    // }
-    
+    }
 }
