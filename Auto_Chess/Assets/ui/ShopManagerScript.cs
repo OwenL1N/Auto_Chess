@@ -47,7 +47,8 @@ public class ShopManagerScript : MonoBehaviour
             shopItems[3, ButtonRef.GetComponent<ButtonInf>().ItemID]++;
             CoinsTXT.text = "Coins:" + coins.ToString();
             ButtonRef.GetComponent<ButtonInf>().QuantityTxt.text = shopItems[3, ButtonRef.GetComponent<ButtonInf>().ItemID].ToString();
-
+ 
+            MainManager.instance.InstantiateUnits();
         }
 
 
